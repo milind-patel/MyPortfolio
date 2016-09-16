@@ -82,6 +82,6 @@ test:
 #
 production:
   <<: *default
-  database: milind #MyPortfolio_production
-  username: milind #MyPortfolio
-  password: milind #<%= ENV['MYPORTFOLIO_DATABASE_PASSWORD'] %>
+  database: MyPortfolio_production
+  username: MyPortfolio
+  password: <%= ENV['DATABASE_URL'] %>
