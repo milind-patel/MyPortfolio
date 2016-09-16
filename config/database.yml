@@ -82,6 +82,8 @@ test:
 #
 production:
   <<: *default
-  database: MyPortfolio_production
-  username: MyPortfolio
-  password: <%= ENV['DATABASE_URL'] %>
+  host: ec2-50-19-239-232.compute-1.amazonaws.com
+  database: d9nm4cqqg9815i #MyPortfolio_production
+  username: cmrtsnhaoklyai #MyPortfolio
+  password: 5nApEJLzpBY31D6pmuXcCUixeu #<%#= ENV['DATABASE_URL'] %>
+  port: 5432
