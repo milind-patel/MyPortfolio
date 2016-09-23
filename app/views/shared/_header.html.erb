@@ -14,13 +14,13 @@
                 <li class="hidden">
                     <a href="#page-top"></a>
                 </li>
-                <li class="page-scroll">
+                <li class="page-scroll <%= is_active?('/home/portfolio')%>">
                     <a href="/home/portfolio">Portfolio</a>
                 </li>
-                <li class="page-scroll">
+                <li class="page-scroll <%= is_active?('/home/about')%>">
                     <a href="/home/about">About</a>
                 </li>
-                <li class="page-scroll">
+                <li class="page-scroll <%= is_active?('/home/contact_us')%>">
                     <a href="/home/contact_us">Contact</a>
                 </li>
             </ul>
