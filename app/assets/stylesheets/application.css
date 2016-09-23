@@ -13,3 +13,15 @@
  *= require_tree .
  *= require_self
  */
+
+ .bg_image{
+   background-image: url('saved/image17.jpg');
+ }
+
+.bg_image1{
+  background: url('saved/image18.jpg') no-repeat center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
