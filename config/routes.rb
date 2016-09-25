@@ -5,6 +5,7 @@ Rails.application.routes.draw do
       get "portfolio"
       get "about"
       get "contact_us"
+      post "download_resume"
     end
   end
   root "home#index"
