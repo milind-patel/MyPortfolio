@@ -93,14 +93,14 @@ header .intro-text .skills {
 }
 
 /*Custom CSS Start*/
-.image_size{
+/*.image_size{
   max-height: 500px;
   max-width: 500px;
-}
-.p_image_size{
+}*/
+/*.p_image_size{
   max-width: 335px;
   max-height: 335px;
-}
+}*/
 .bg_image{
 /*  background-image: url('background_image.jpg') no-repeat center;
   -webkit-background-size: cover;
@@ -124,11 +124,7 @@ hr.star-light{
 
 /*Media Query Start*/
 @media (min-width: 768px) {
-  .image_size{
-    max-height: 400px;
-    max-width: 400px;
-  }
-
+  
   header .container {
     padding-top: 150px;
     padding-bottom: 100px;

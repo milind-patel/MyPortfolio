@@ -1,4 +1,4 @@
-<section id="portfolio" style="margin-top: 40px;">
+<section id="portfolio">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
@@ -14,7 +14,7 @@
                             <i class="fa fa-search-plus fa-3x"></i>
                         </div>
                     </div>
-                    <%= image_tag "portfolio/cabin.png",:class => "img-responsive" %>
+                    <%= image_tag("project1_cropped2.png",:class => "img-responsive") %>
                     <!-- <img src="../../portfolio/cabin.png" class="img-responsive" alt=""> -->
                 </a>
             </div>
@@ -25,7 +25,7 @@
                             <i class="fa fa-search-plus fa-3x"></i>
                         </div>
                     </div>
-                    <%= image_tag "portfolio/cake.png" ,class: "img-responsive" %>
+                    <%= image_tag "project2_cropped.png" ,class: "img-responsive" %>
                     <!-- <img src="../../img/portfolio/cake.png" class="img-responsive" alt=""> -->
                 </a>
             </div>
@@ -91,22 +91,24 @@
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
                     <div class="modal-body">
-                        <h2>Project Title</h2>
+                        <h2>Billable app</h2>
                         <hr class="star-primary">
-                        <%= image_tag "portfolio/cabin.png",class: "img-responsive" %>
-                        <!-- <img src="img/portfolio/cabin.png" class="img-responsive img-centered" alt=""> -->
-                        <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                        <%= (image_tag "project1.png",class: "img-responsive img-centered") %>
+                        <p>
+                        It's a Saas based application for law firms to manage their matters and track their time taken by attorneys to manage matters. We have applied Lawpay, Stripe, PaypalPro, Recurly and Authorize.net payment gateways in this application.</p>
+                        <!-- Law firms will signup here and add more attorneys in their firms.
+                        Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p> -->
                         <ul class="list-inline item-details">
-                            <li>Client:
-                                <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+                            <li>Link:
+                                <strong><a href="http://www.gobillable.com" target="_blank">www.gobillable.com/</a>
                                 </strong>
                             </li>
                             <li>Date:
-                                <strong><a href="http://startbootstrap.com">April 2014</a>
+                                <strong><a href="http://www.gobillable.com/">April 2015 - October 2016</a>
                                 </strong>
                             </li>
-                            <li>Service:
-                                <strong><a href="http://startbootstrap.com">Web Development</a>
+                            <li>Technologies:
+                                <strong>Angular JS - Ruby on rails
                                 </strong>
                             </li>
                         </ul>
@@ -129,22 +131,28 @@
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
                     <div class="modal-body">
-                        <h2>Project Title</h2>
+                        <h2>Minter app</h2>
                         <hr class="star-primary">
-                        <%= image_tag "portfolio/cake.png" ,class: "img-responsive img-centered"%>
+                        <%= image_tag "project2.png" ,class: "img-responsive img-centered"%>
                         <!-- <img src="img/portfolio/cake.png" class="img-responsive img-centered" alt=""> -->
-                        <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                        <p>
+                        This is a Time tracking & invoice related product which is mainly used for tracking time, creating invoice based on tracked time and getting online payments through payment gateways like Stripe,Paypal.There are other futures for this product is like Estimation, Projects, Tasks,Reports based on logged hours, Gadgets etc.We have also done integration with basecamp for tracking time in minterapp.
+                        </p>
+
+
+
+                        <!-- Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p> -->
                         <ul class="list-inline item-details">
-                            <li>Client:
-                                <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+                            <li>Website:
+                                <strong><a href="http://www.minterapp.com">http://www.minterapp.com</a>
                                 </strong>
                             </li>
                             <li>Date:
-                                <strong><a href="http://startbootstrap.com">April 2014</a>
+                                <strong><a href="http://www.minterapp.com">January 2013 - April 2015</a>
                                 </strong>
                             </li>
-                            <li>Service:
-                                <strong><a href="http://startbootstrap.com">Web Development</a>
+                            <li>Technologies:
+                                <strong>Ruby on rails
                                 </strong>
                             </li>
                         </ul>
@@ -306,4 +314,13 @@
             </div>
         </div>
     </div>
+</div>
+
+<!-- Footer -->
+
+<!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+<div class="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
+    <a class="btn btn-primary" href="#page-top">
+        <i class="fa fa-chevron-up"></i>
+    </a>
 </div>
