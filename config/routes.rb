@@ -6,6 +6,7 @@ Rails.application.routes.draw do
       get "about"
       get "contact_us"
       post "download_resume"
+      post "save_contact_details"
     end
   end
   root "home#index"
