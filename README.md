@@ -42,3 +42,10 @@ Now you may exit the PostgreSQL console by entering this command:
 
 
 Add custom.css file
+
+
+Heroku Commands:
+sudo apt-get install pgadmin3 - Install pgadmin to see postgre sql admin panel.
+heroku run rails console - Like Rails c
+heroku run rake db:migrate - Run migrations
+heroku restart - Restart heroku app
