@@ -26,7 +26,9 @@ class HomeController < ApplicationController
 		if request.location.present?
 			params[:contact_info][:city] = request.location.city.present? ? request.location.city : nil
 			params[:contact_info][:country] = request.location.country.present? ? request.location.country : nil
-			#params[:contact_info][:postal_code] = request.location.postal_code.present? ? request.location.postal_code : nil
+			params[:contact_info][:latitude] = request.location.data["latitude"].present? ? request.location.data["latitude"] : nil
+			params[:contact_info][:longitude] = request.location.data["longitude"].present? ? request.location.data["longitude"] : nil
+			params[:contact_info][:postal_code] = request.location.data["zipcode"].present? ? request.location.data["zipcode"] : nil
 		end
 		contact_info = ContactInfo.new(contact_info_params)
 		if contact_info.save
@@ -39,6 +41,6 @@ class HomeController < ApplicationController
 	end
 
 	def contact_info_params
-		params.fetch(:contact_info).permit(:name,:email,:phone,:message,:city,:state,:country,:ip_address)
+		params.fetch(:contact_info).permit(:name,:email,:phone,:message,:city,:state,:country,:ip_address,:latitude,:postal_code,:longitude)
 	end
 end
