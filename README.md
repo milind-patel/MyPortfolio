@@ -40,3 +40,5 @@ Now you may exit the PostgreSQL console by entering this command:
 
 6) rails new appname -d postgresql
 
+
+Add custom.css file
