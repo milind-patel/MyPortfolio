@@ -22,6 +22,12 @@ class HomeController < ApplicationController
 	end
 
 	def save_contact_details
+		params[:contact_info][:ip_address] = request.ip.present? ? request.ip : nil
+		if request.location.present?
+			params[:contact_info][:city] = request.location.city.present? ? request.location.city : nil
+			params[:contact_info][:country] = request.location.country.present? ? request.location.country : nil
+			#params[:contact_info][:postal_code] = request.location.postal_code.present? ? request.location.postal_code : nil
+		end
 		contact_info = ContactInfo.new(contact_info_params)
 		if contact_info.save
 			flash[:success] = "Thank you for your information. I will reach you very soon!!!"
