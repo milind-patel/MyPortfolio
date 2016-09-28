@@ -48,4 +48,4 @@ Heroku Commands:
 sudo apt-get install pgadmin3 - Install pgadmin to see postgre sql admin panel.
 heroku run rails console - Like Rails c
 heroku run rake db:migrate - Run migrations
-heroku restart - Restart heroku app
+heroku restart - Restart heroku app 
